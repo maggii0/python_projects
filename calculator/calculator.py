@@ -13,4 +13,7 @@ def calculate(num1, num2, operation):
         case '*':
             return num1 * num2
 
-print(f"This is your result: {calculate(num1, num2, operation)}")
+if num2 == 0 and operation == "/":
+    print(f"You cannot divide by 0")
+else:
+    print(f"This is your result: {calculate(num1, num2, operation)}")
